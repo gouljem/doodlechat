@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="profile-chip" onClick={() => setShowModal(true)}>
             <span className="chip-avatar"><Avatar id={profile.avatarId} size="100%" /></span>
             <span>{profile.username}</span>
-            {isAdmin && <span className="admin-pill">ADMIN</span>}
+            {isAdmin && <span className="admin-pill">Management</span>}
           </div>
         </div>
       </div>

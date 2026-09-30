@@ -181,7 +181,7 @@ export default function Admin() {
             onKeyDown={(e) => e.key === 'Enter' && createSession()}
           />
           <button
-            className="btn btn-primary btn-sm"
+            className="btn btn-x btn-sm"
             style={{ width: 'auto' }}
             onClick={createSession}
           >
@@ -221,13 +221,13 @@ export default function Admin() {
             </div>
             <div className="admin-row-actions">
               <button
-                className="btn btn-ghost btn-sm"
+                className="btn btn-x btn-sm"
                 onClick={() => navigate(`/session/${s.code}`)}
               >
                 Join
               </button>
               <button
-                className="btn btn-ghost btn-sm"
+                className="btn btn-x btn-sm"
                 onClick={() => openRenameSession(s.code, s.name)}
               >
                 Rename

@@ -227,7 +227,7 @@ export default function Chat() {
               onChange={(e) => handleTyping(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && send()}
             />
-            <button className="btn btn-primary send-btn" onClick={send}>Send</button>
+            <button className="btn btn-x send-btn" onClick={send}>Send</button>
           </div>
         </div>
         <div className={'card member-panel' + (showMembers ? ' open' : '')}>

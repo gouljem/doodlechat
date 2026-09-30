@@ -41,7 +41,7 @@ export default function Create() {
           />
           {err && <div className="error-text">{err}</div>}
         </div>
-        <button className="btn btn-primary" disabled={busy} onClick={create}>
+        <button className="btn btn-x" disabled={busy} onClick={create}>
           {busy ? 'Creating…' : 'Create & enter →'}
         </button>
       </div>

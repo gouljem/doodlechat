@@ -53,7 +53,7 @@ export default function ProfileModal({ onClose }) {
             ))}
           </div>
         </div>
-        <button className="btn btn-primary" style={{ marginTop: 4 }} disabled={saving} onClick={save}>
+        <button className="btn btn-x" style={{ marginTop: 4 }} disabled={saving} onClick={save}>
           {saving ? 'Saving…' : 'Save changes'}
         </button>
         <button className="btn btn-ghost" style={{ marginTop: 10 }} onClick={() => { logout(); onClose(); }}>

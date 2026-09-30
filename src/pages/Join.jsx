@@ -55,7 +55,7 @@ export default function Join() {
           />
           {err && <div className="error-text">{err}</div>}
         </div>
-        <button className="btn btn-primary" onClick={joinByCode}>Join session →</button>
+        <button className="btn btn-x" onClick={joinByCode}>Join session →</button>
       </div>
       <div className="card">
         <div className="card-title">Active sessions</div>
@@ -72,7 +72,7 @@ export default function Join() {
                   <span>{s.memberCount} online</span>
                 </div>
               </div>
-              <button className="btn btn-ghost btn-sm" onClick={() => navigate(`/session/${s.code}`)}>Join</button>
+              <button className="btn btn-x btn-sm" onClick={() => navigate(`/session/${s.code}`)}>Join</button>
             </div>
           ))}
         </div>

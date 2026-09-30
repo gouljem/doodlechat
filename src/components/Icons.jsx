@@ -18,6 +18,7 @@ const ICONS = {
   timer: 'M12 9v4l2.5 1.5M10 3h4M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16z',
   hash: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
   chevron: 'M9 18l6-6-6-6',
+  nose: 'M9 5c3 2 4 5 4 8l4 3c.7.5.4 1.5-.5 1.7l-3.5.6c-1.8.3-3.5-.2-4.5-1.3',
 };
 
 export default function Icon({ name, size = 20, strokeWidth = 1.85, className }) {

@@ -13,12 +13,12 @@ function fmtTimeLeft(ms) {
 
 const STEPS = [
   { icon: 'plus', title: 'Create a room', body: 'Name a session and get a 5-character code instantly.' },
-  { icon: 'hash', title: 'Share the code', body: 'Only people with the code can walk in. No public directory required.' },
+  { icon: 'hash', title: 'Share the code', body: 'Have a friend join through the "/join" page or the bottom of this page.' },
   { icon: 'timer', title: 'Chat, then vanish', body: 'Rooms self-destruct after 2.5 hours. Nothing lingers overnight.' },
 ];
 
 const FEATURES = [
-  { icon: 'lock', title: 'Code-locked', body: 'Every room is gated by a short join code you control.' },
+  { icon: 'nose', title: 'Kalvin Nose', body: 'Be aware of rooms you join, there might be a possibility that long-nose Kalvin Byrd is lurking...' },
   { icon: 'shield', title: 'Private by default', body: 'No global feed. Conversations stay inside the session.' },
   { icon: 'timer', title: 'Auto-expire', body: 'Sessions wipe themselves so old chats do not pile up.' },
   { icon: 'users', title: 'Live presence', body: 'See who is in the room and who is typing, in real time.' },
@@ -51,14 +51,14 @@ export default function Home() {
         <div className="eyebrow">Doodle Chat</div>
         <h2 className="page-title">Private rooms that do not overstay.</h2>
         <p className="page-sub">
-          Spin up a code-locked session, invite friends, and let it self-destruct after 2.5 hours.
+          Spin up a Doodle Chat session, invite friends, and let it self-destruct after 2.5 hours.
         </p>
         <div className="home-hero-actions">
-          <button className="btn btn-primary" onClick={() => navigate('/create')}>
+          <button className="btn btn-x " onClick={() => navigate('/create')}>
             <Icon name="plus" size={18} />
             Create a session
           </button>
-          <button className="btn btn-ghost" onClick={() => navigate('/join')}>
+          <button className="btn btn-x" onClick={() => navigate('/join')}>
             <Icon name="key" size={18} />
             Join with a code
           </button>
@@ -84,19 +84,19 @@ export default function Home() {
 
       <div className="action-grid">
         <button type="button" className="action-card" onClick={() => navigate('/create')}>
-          <div className="action-icon"><Icon name="plus" size={22} /></div>
+          <div className="action-icon muted"><Icon name="plus" size={22} /></div>
           <h3>Create a session</h3>
           <p>Spin up a private room and share the code with friends.</p>
         </button>
         <button type="button" className="action-card" onClick={() => navigate('/join')}>
-          <div className="action-icon"><Icon name="key" size={22} /></div>
+          <div className="action-icon muted "><Icon name="key" size={22} /></div>
           <h3>Join a session</h3>
           <p>Enter a code or pick from the rooms that are live right now.</p>
         </button>
         <button type="button" className="action-card" onClick={() => navigate('/changelog')}>
           <div className="action-icon muted"><Icon name="list" size={22} /></div>
           <h3>Changelog</h3>
-          <p>See what shipped in v3 — routing, SQLite, and presence.</p>
+          <p>See what shipped in recent updates or even past logs.</p>
         </button>
         <button type="button" className="action-card" onClick={() => navigate('/about')}>
           <div className="action-icon muted"><Icon name="info" size={22} /></div>
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="card-title">Live rooms</div>
             <p className="home-live-sub">Jump into something already going, or start your own.</p>
           </div>
-          <button className="btn btn-ghost btn-sm" onClick={() => navigate('/join')}>
+          <button className="btn btn-x btn-sm" onClick={() => navigate('/join')}>
             All rooms
             <Icon name="chevron" size={14} />
           </button>
@@ -168,7 +168,7 @@ export default function Home() {
                 <span>{s.memberCount} online</span>
               </div>
             </div>
-            <button className="btn btn-ghost btn-sm" onClick={() => navigate(`/session/${s.code}`)}>Join</button>
+            <button className="btn btn-x btn-sm" onClick={() => navigate(`/session/${s.code}`)}>Join</button>
           </div>
         ))}
       </section>

@@ -67,7 +67,7 @@ a{ color:inherit; text-decoration:none; }
 .chip-avatar{ width:28px; height:28px; border-radius:50%; overflow:hidden; flex-shrink:0; display:block; }
 .admin-pill{
   font-family:'Space Grotesk',sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.4px;
-  background:var(--grad); color:#0A0C14; padding:2px 7px; border-radius:999px;
+  background-color: #7171fddc; color:#0A0C14; padding:2px 7px; border-radius:999px;
 }
 
 /* PAGE LAYOUT */
@@ -245,7 +245,7 @@ label{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing
 }
 .icon-btn:hover{ border-color:var(--border-hi); color:var(--text); }
 .member-count-dot{
-  position:absolute; top:-4px; right:-4px; background:var(--grad); color:#0A0C14;
+  position:absolute; top:-4px; right:-4px; background-color: #111113dc; color:#ffffff;
   font-size:9px; font-weight:800; border-radius:999px; padding:1px 4px; min-width:14px; text-align:center;
 }
 .msgs{ flex:1; overflow-y:auto; padding:16px 18px; display:flex; flex-direction:column; gap:12px; }
@@ -289,8 +289,8 @@ label{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing
 
 /* TOAST */
 .toast{
-  position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(8px);
-  background:#15182A; border:1px solid var(--border-hi); color:var(--text); font-weight:600; font-size:13.5px;
+  position:fixed; bottom:35px; left:50%; transform:translateX(-50%) translateY(8px);
+  background:#642b3ab9; border:5px solid var(--border-hi); color:var(--text); font-weight:600; font-size:13.5px;
   padding:11px 20px; border-radius:999px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.4);
   opacity:0; transition:all .25s ease; pointer-events:none;
 }
